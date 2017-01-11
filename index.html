@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <title>A Dummy Rest Service</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div ng-controller="ctrl">
+        <div >
+            <h2 align="center"> A Dummy Rest Service !! </h2>
+            <div align="center">
+                <br><br>    
+                Insert a number:
+                <br><br>
+                <input type="number" ng-model = "inputX" ng-change="InputChanged()">
+                <br>
+                <h4>  {{ rest }}  </h4>
+                <p> You have call the service with the parameter {{ rest.input }}, And it send you back the value {{  rest.output  }} <p>
+                <br>
+            </div>
+        </div> 
+    </div>    
+</body>
+</html>
